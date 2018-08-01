@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="bing,wallpaper,scenery,picture">
+	<meta name="description" content="Bing Wallpaper Synchronous Update">
+	<title>About Us -- Bing Daily Wallpaper</title>
+	<link href="images/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="style.css">
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114373646-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-114373646-1');
+	</script>
+</head>
+<body>
+	<section class="about">
+		<h1><a href="/">Bing Wallpaper Gallery</a></h1>
+		<h2>Bing daily wallpaper, colorful everyday.</h2>
+		<p>This site is a gallery of <a href="https://bing.com">Bing Search</a> Daily Wallpaper. I want to share these beautiful pictures with you. We can be more convenient to appreciate and collect these wallpapers. If you're interested in more pictures, you can go to the home site <a href="https://gifposter.com">www.gifposter.com</a>. If you have any advice, please leave a message for me.</p>
+		<img src="images/bing_gifposter.jpg" alt="bing gifposter homepage screenshot">
+		<h3>( Homepage screenshot )</h3>
+		<p>bing.gifposter.com can also be well presented at the mobile end. I have did proper treatment of the wallpaper, access the website with a mobile phone, you can save the wallpaper as cell phone wallpaper.Part of the phone's wallpaper is as follows: </p>
+		<div class="mobile-wallpaper-samples">
+			<img src="/bingImages/DCCB_EN-US11982634575_608x1080.jpg" alt="The Door County Coastal Byway in Wisconsin">
+			<img src="/bingImages/SwissFoxSnow_EN-US12956141356_608x1080.jpg" alt="A red fox on the Swiss side of the Jura Mountain range">
+			<img src="/bingImages/RomanTheatre_EN-US8544643859_608x1080.jpg" alt="Roman theater of Cartagena, Spain" >
+			<img src="/bingImages/InnerdalsvatnaVideo_EN-US11002526366_608x1080.jpg" alt="Innerdalsvatna Lake, near Ålvundeidet, Norway">
+			<img src="/bingImages/HeadlampsVantage_EN-US11539919365_608x1080.jpg" alt="The Feathers at Frenchman Coulee near Vantage, Washington">
+			<img src="/bingImages/AgricultureHeart_EN-US11072776280_608x1080.jpg" alt="Aerial view of a heart-shaped field in Trittau, Germany" >
+		</div>
+		<div id="comment"></div>
+        <script>
+        	var dom =document.getElementById('comment');
+            new Valine({
+                el: dom,
+                //verify: !0,
+                app_id: '2zJsi11LAiQIcvm55kvwTa7u-MdYXbMMI',
+                app_key: 'QLF03rwzVf5N6k721YNM94gh',
+                placeholder: 'say someting~',
+                lang:'en' // 设置这里就ok
+            });
+        </script>
+	</section>
+</body>
+</html>

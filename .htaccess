@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)?$ https://%{SERVER_NAME}/$1 [R=301,L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+RewriteRule ^wallpaper-(\w+)-(\w+)\.html$  wallpaper.php?d=$1&t=$2
+RewriteRule ^viewsrank$  viewsrank.php
+</IfModule>
+
+<IfModule mod_headers.c>   
+<FilesMatch "\.(gif|jpg|jpeg|png|ico)$">   
+Header set Cache-Control "max-age=604800"   
+</FilesMatch>  
+</IfModule>
