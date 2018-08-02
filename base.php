@@ -27,9 +27,9 @@ class Base{
 
     function autoPostToTwitter ($title , $url, $pic) {
         require_once('codebird/codebird.php');
-        \Codebird\Codebird::setConsumerKey("xpINv7R7D1dBfd6yODp8NyPoy", "8wWjAU4IpP4IPGb9ER1UpzCzS9brArvcbhQ1eJvbXGXaadXvu3");
+        \Codebird\Codebird::setConsumerKey("");
         $cb = \Codebird\Codebird::getInstance();
-        $cb->setToken("941137501539917824-x3lUX5xefgTSRoV8Ojt4ExnWVifo8iL", "zn5gXzagz2ynAq0kMg9z5coKXI2um7vPcxioGusGoQG14");
+        $cb->setToken("");
          
         $params = array(
           'status' => $title.' '.$url.' #bing #wallpaper',
@@ -41,8 +41,8 @@ class Base{
     function postToQiniu ($fetch_url, $img_name) {
         // 需要填写你的 Access Key 和 Secret Key
         $bucket = 'bing';
-        $accessKey = 'H5HVNa5jv1IpfKtanazVch0OqTh1cPZmCsy-_x0y';
-        $secretKey = 'hn4qZEfc_ZwenobpU9v_96ba1hC2y9SUxV68fzol';
+        $accessKey = '';
+        $secretKey = '';
         // 构建鉴权对象
         $auth = new Auth($accessKey, $secretKey);
         // 生成上传 Token
